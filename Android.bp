@@ -8,7 +8,11 @@ android_app {
     resource_dirs: ["res"],
     sdk_version: "current",
     overrides: ["AlarmClock"],
-    optimize: {
+        optimize: {
+        enabled: true,
+        optimize: true,
+        shrink: true,
+        obfuscate: true,
         proguard_flags_files: ["proguard.flags"],
     },
     srcs: [
